@@ -9,32 +9,72 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 0 20px;
-        }
-        h1, h2, h3 {
+            padding: 0;
+            background-color: #f4f4f9;
             color: #333;
         }
-        a {
-            color: #007bff;
-            text-decoration: none;
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
         }
-        a:hover {
-            text-decoration: underline;
+        header h1, header h2 {
+            margin: 0;
         }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
+        nav {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
         }
         nav ul {
             list-style: none;
+            margin: 0;
             padding: 0;
         }
         nav ul li {
             display: inline;
-            margin-right: 10px;
+            margin: 0 10px;
         }
-
-</style>
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        section h2, section h3 {
+            color: #0056b3;
+        }
+        ul {
+            margin: 10px 0;
+            padding: 0 20px;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -43,8 +83,9 @@
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">Home Page</a></li>
-            <li><a href="report.html">Report</a></li>
+            <li><a href="#introduction">Home Page</a></li>
+            <li><a href="#course_project">Course Project</a></li>
+            <li><a href="#learning_reflections">Reflections</a></li>
         </ul>
     </nav>
     <main>
@@ -67,7 +108,7 @@
             </ul>
         </section>
         <section id="learning_reflections">
-<h2>Course Learning Reflections</h2>
+            <h2>Course Learning Reflections</h2>
             <ul>
                 <li>What kinds of problems do we see in nature? (iteration, recursion, backtracking)</li>
                 <li>What is space and time efficiency? Why are they important?</li>
