@@ -72,18 +72,22 @@
 
         nav ul li a {
             text-decoration: none;
-            font-weight: bold;
-            padding: 8px 15px;
+            font-weight: normal;
             color: #3498db;
-            background: white;
-            border: 2px solid #3498db;
-            border-radius: 5px;
-            transition: all 0.3s ease;
+            padding: 8px 18px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-size: 1rem;
         }
 
         nav ul li a:hover {
             background-color: #3498db;
-            color: white;
+            color: #fff;
+        }
+
+        nav ul li a:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.4);
         }
 
         /* Footer styling */
