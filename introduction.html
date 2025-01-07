@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Project – Subway System Optimization</title>
-    <style>
+<style>
+        /* General Styles */
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
@@ -13,47 +14,108 @@
             background-color: #f4f4f9;
             color: #333;
         }
+
+        /* Header Styles */
         header {
-            background: #0056b3;
+            background: linear-gradient(45deg, #0056b3, #007bff);
             color: white;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        /* Main Section */
         main {
             max-width: 1100px;
             margin: 20px auto;
             padding: 20px;
             background: white;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
         h1, h2 {
             color: #0056b3;
         }
+
+        p {
+            margin: 10px 0;
+        }
+
+        /* Table Styles */
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         table th, table td {
             padding: 12px;
             text-align: left;
             border: 1px solid #ddd;
         }
+
         table th {
             background-color: #0056b3;
             color: white;
         }
+
         table tr:nth-child(even) {
             background-color: #f9f9f9;
         }
+
         table tr:hover {
             background-color: #f1f1f1;
         }
+
+        /* Navigation Styles */
+        nav {
+            margin: 20px 0;
+            text-align: center;
+            background-color: #0056b3;
+            padding: 10px 0;
+            border-radius: 8px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #0056b3;
+            transform: scale(1.1);
+        }
+
+        /* Content Section */
         .content-section {
             margin: 20px 0;
         }
+
         .content-section p {
             margin: 10px 0;
         }
