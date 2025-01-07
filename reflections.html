@@ -3,141 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design and Analysis of Algorithms Portfolio</title>
+    <title>Course Learning Reflections</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
             background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1, header h2 {
-            margin: 0;
-        }
-        nav {
-            background-color: #0056b3;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
             margin: 0;
             padding: 0;
         }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-        main {
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
             padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        section {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        section h2, section h3 {
-            color: #0056b3;
-        }
-        ul {
-            margin: 10px 0;
-            padding: 0 20px;
-        }
-        ul li {
-            margin-bottom: 5px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
+        h1, h2 {
             text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            color: #2c3e50;
+        }
+        h3 {
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+            background-color: #ecf8fe;
+            border-radius: 5px;
+        }
+        .section:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        p {
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Design and Analysis of Algorithms</h1>
-        <h2>Learning Portfolio</h2>
-    </header>
-    <main>
-        <section id="introduction">
-            <h2>Home Page – Introduction</h2>
-            <ul>
-                <li>What is the course about?</li>
-                <li>What kind of data structures and algorithms have you studied?</li>
-                <li>How do you connect the course with real-time applications?</li>
-            </ul>
-        </section>
-        <section id="course_project">
-            <h2>Course Project Introduction</h2>
-            <ul>
-                <li>Details of the problem space and how it was arrived at</li>
-                <li>Summary of findings from the white paper</li>
-                <li>Reflection on city design and identified business cases</li>
-                <li>Problem definition and team details</li>
-                <li>Business cases that each member is working on</li>
-            </ul>
-        </section>
-        <section id="learning_reflections">
-            <h2>Course Learning Reflections</h2>
-            <ul>
-                <li>What kinds of problems do we see in nature? (iteration, recursion, backtracking)</li>
-                <li>What is space and time efficiency? Why are they important?</li>
-                <li>Takeaways from different design principles</li>
-                <li>The hierarchical data and tree data structures (tree, bst, avl, etc.)</li>
-                <li>Need for array query algorithms and their applications</li>
-                <li>Difference between trees and graphs and their traversals</li>
-                <li>Sorting and searching algorithms and their real-world connections</li>
-                <li>Importance of graph algorithms (spanning trees, shortest paths)</li>
-                <li>Algorithm design techniques studied</li>
-            </ul>
-            <h3>Additional Reflection Questions</h3>
-            <ul>
-                <li>How do you determine the most efficient approach when solving a complex problem?</li>
-                <li>Reflect on balancing multiple conflicting constraints in a design. What approach did you take?</li>
-                <li>What criteria do you use to evaluate the effectiveness of a solution?</li>
-                <li>How can you adapt an existing solution to address a new or unforeseen challenge?</li>
-                <li>What strategies do you use to identify patterns or structures in complex datasets?</li>
-                <li>How do you decide when to prioritize simplicity over optimization in a solution?</li>
-                <li>Reflect on breaking down a problem into smaller components.</li>
-                <li>What trade-offs do you consider when choosing different approaches to solve a problem?</li>
-                <li>How do you identify and address potential weaknesses in a solution?</li>
-                <li>Reflect on applying knowledge from one context to another.</li>
-                <li>How do you decide when to innovate versus relying on tried-and-tested solutions?</li>
-            </ul>
-        </section>
-        <nav>
-        <ul>
-            <li><a href="#introduction">Home Page</a></li>
-            <li><a href="#course_project">Course Project</a></li>
-            <li><a href="#learning_reflections">Reflections</a></li>
-        </ul>
-    </nav>
-    </main>
-    <footer>
-        <p>&copy; 2024 Design and Analysis of Algorithms Portfolio</p>
-    </footer>
+    <div class="container">
+        <h1>Course Learning Reflections</h1>
+
+        <h2>Key Questions and Answers</h2>
+
+        <div class="section">
+            <h3>What kinds of problems do we see in nature?</h3>
+            <p>Nature often presents problems that can be modeled using computational concepts like iteration, recursion, and backtracking. For instance, iterative patterns are seen in cyclic processes like seasons or life cycles. Recursive phenomena, such as fractals in snowflakes and tree growth, mirror recursive algorithms. Backtracking is analogous to the way ants explore paths to locate food, returning to previous points when they encounter dead ends.</p>
+        </div>
+
+        <div class="section">
+            <h3>What is space and time efficiency? Why are they important?</h3>
+            <p>Space and time efficiency refer to how well an algorithm uses memory (space) and completes its task (time). Efficient algorithms reduce resource consumption, making them crucial for practical applications, especially when working with large datasets or constrained hardware environments. Efficiency directly impacts performance, scalability, and cost-effectiveness.</p>
+        </div>
+
+        <div class="section">
+            <h3>Takeaways from different design principles</h3>
+            <p>Design principles such as modularity, abstraction, and divide-and-conquer emphasize breaking down problems, organizing code for reusability, and simplifying complexity. They lead to robust, scalable, and maintainable solutions, critical for both theoretical and real-world applications.</p>
+        </div>
+
+        <div class="section">
+            <h3>The hierarchical data and tree data structures (tree, BST, AVL, etc.)</h3>
+            <p>Trees, BST, and AVL model hierarchical data. These structures allow for operations like search, insertion, and deletion efficiently by putting the data in a logical order. AVL trees ensure that it is in optimal form for any dynamic dataset as there is balance maintained.</p>
+        </div>
+
+        <div class="section">
+            <h3>Need for array query algorithms and their applications</h3>
+            <p>Prefix sum or segment tree-based array query algorithms satisfy very specific needs: range queries, updates, among others. Their uses are seen in database optimization and gaming and can be applied for quick data retrieval or processing.</p>
+        </div>
+
+        <div class="section">
+            <h3>Difference between trees and graphs and their traversals</h3>
+            <p>Trees are a special type of graph that looks hierarchical and contains no loops. They are, however, much more general, and the relationship described can get very complicated when cycles and disconnected pieces are involved. Data extraction and search as well as analysis of structures through traversal methods like BFS and DFS differ in the case of trees.</p>
+        </div>
+
+        <div class="section">
+            <h3>Sorting and searching algorithms and their real-world connections</h3>
+            <p>Sorting algorithms, like quicksort or mergesort, and searching techniques, like binary search, underpin many real-world systems, such as e-commerce platforms and database indexing. They organize data efficiently, enabling quick access and decision-making processes.</p>
+        </div>
+
+        <div class="section">
+            <h3>Importance of graph algorithms (spanning trees, shortest paths)</h3>
+            <p>Graph algorithms solve some of the world's real-life problems involving networks, such as finding the shortest paths (Dijkstra's algorithm) and minimum spanning trees (Kruskal's or Prim's algorithms). These are significant in transportation, telecommunications, and power grid optimisation.</p>
+        </div>
+
+        <div class="section">
+            <h3>Algorithm design techniques studied</h3>
+            <p>Divide-and-conquer, dynamic programming, and greedy algorithms provide for systematic methods solving diverse problems: They are approaches toward the optimum and efficient design in which adaptability can be created under diverse scenario constraints.</p>
+        </div>
+
+        <h2>Additional Reflection Questions</h2>
+
+        <!-- Add reflection questions and answers here in similar sections -->
+        <div class="section">
+            <h3>How do you determine the most efficient approach when solving a complex problem?</h3>
+            <p>In solving a complex problem, it is essential to understand the requirements and constraints of the problem. I first analyze the input, output, and expected complexity of the problem. A systematic approach would consider different algorithms or methods, benchmark their space and time complexities, and choose the one that best balances efficiency and practicality for the specific context.</p>
+        </div>
+                <div class="section">
+            <h3>Reflect on balancing multiple conflicting constraints in a design. What approach did you take?</h3>
+            <p>To balance multiple constraints, goals must be clearly prioritized. I achieve this by first identifying critical trade-offs, such as performance versus cost or simplicity versus accuracy. Techniques like Pareto analysis or iterative testing can then help refine the design so that it best meets the most essential requirements and lessens the impact of lesser priorities.</p>
+        </div>
+
+        <div class="section">
+            <h3>What criteria do you use to evaluate the effectiveness of a solution?</h3>
+            <p>To check effectiveness, I use correctness, efficiency, scalability, and user satisfaction criteria. Simulated scenarios and stress testing validate performance under different conditions and ensure that the solution meets technical as well as functional goals.</p>
+        </div>
+
+        <div class="section">
+            <h3>How can you adapt an existing solution to address a new or unforeseen challenge?</h3>
+            <p>Adapting a solution to new challenges involves understanding the gap between current functionality and the new requirements. I do this by modularizing components and leveraging flexible design patterns that allow incremental adjustment while maintaining the integrity of the original solution.</p>
+        </div>
+
+        <div class="section">
+            <h3>What strategies do you use to identify patterns or structures in complex datasets?</h3>
+            <p>In identifying patterns in datasets, I make use of techniques such as data visualization, clustering, and statistical analysis. Other tools, like decision trees or neural networks, further help me in uncovering hidden relationships that can simplify the complexity of raw data into actionable insights.</p>
+        </div>
+
+        <div class="section">
+            <h3>How do you decide when to prioritize simplicity over optimization in a solution?</h3>
+            <p>The choice of simplicity over optimization depends on the scope and urgency of the problem. Simplicity is suitable during prototyping or when resources are limited, while optimization becomes critical for systems requiring high performance or handling large-scale operations.</p>
+        </div>
+
+        <div class="section">
+            <h3>Reflect on breaking down a problem into smaller components.</h3>
+            <p>Breaking down a problem into smaller components involves dividing it into manageable sub-problems, meaning it has well-defined objectives. Techniques such as division and conquering or abstraction enable me to concentrate on the individual parts, which can then be integrated for a cohesive solution.</p>
+        </div>
+
+        <div class="section">
+            <h3>What trade-offs do you consider when choosing different approaches to solve a problem?</h3>
+            <p>The approach to be chosen needs to identify trade-offs such as speed or accuracy, resource consumption or ease of implementation. A proper balance here is making the assessment in relation to short-term and long-term goals, where the choice aligns with the objectives in place.</p>
+        </div>
+
+        <div class="section">
+            <h3>How do you identify and address potential weaknesses in a solution?</h3>
+            <p>Potential weaknesses are identified through rigorous testing, peer review, and scenario analysis. Refinements are addressed by revising the design, implementing fallback mechanisms, and continuing to monitor for the performance bottlenecks or vulnerabilities.</p>
+        </div>
+
+        <div class="section">
+            <h3>Reflect on applying knowledge from one context to another.</h3>
+            <p>Applying knowledge from one domain to another involves identifying analogous structures or principles. For instance, using algorithmic techniques from data science to optimize processes in software development demonstrates how cross-domain learning enhances problem-solving capabilities.</p>
+        </div>
+
+        <div class="section">
+            <h3>How do you decide when to innovate versus relying on tried-and-tested solutions?</h3>
+            <p>The choice of innovation or proven methods depends on the risk tolerance associated with the problem. For urgent or critical tasks, reliable solutions are preferred, but innovative approaches are explored when pushing boundaries or meeting unique challenges is the goal.</p>
+        </div>
+    </div>
 </body>
 </html>
