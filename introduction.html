@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Project – Subway System Optimization</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        table th, table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: #0056b3;
+            color: white;
+        }
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        table tr:hover {
+            background-color: #f1f1f1;
+        }
+        .content-section {
+            margin: 20px 0;
+        }
+        .content-section p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Course Project – Subway System Optimization</h1>
+    </header>
+    <main>
+        <section class="content-section">
+            <h2>Home Page – Introduction</h2>
+            <p><strong>What is the course about?</strong></p>
+            <p>The course is about learning how to solve problems using algorithms.</p>
+
+            <p><strong>What kind of data structures and algorithms have you studied?</strong></p>
+            <p>In our study of data structures and algorithms, we applied several key principles to optimize solutions. Decomposition helped break down complex problems, while pattern recognition improved string matching through algorithms like KMP and Boyer-Moore. Abstraction simplified graphs and trees for easier operations, and brave and cautious travel guided our approach in algorithms like Dijkstra’s. Pruning was used in Kruskal’s and Prim’s algorithms to eliminate redundant edges, while lazy propagation optimized tree-based range queries. Sliding window techniques were applied to substring matching, and edge relaxation refined paths in shortest path algorithms. Balancing and rotation kept tree structures efficient, and memoization avoided redundant calculations in dynamic programming. Finally, invariants ensured correctness in algorithms like Bellman-Ford. These principles enabled us to develop efficient and accurate solutions. </p>
+
+            <p><strong>How do you connect the course with real-time applications?</strong></p>
+            <p>The course in data analysis and algorithms directly links with real-world applications through its ability to provide foundational techniques in the solution of complicated problems that crop up in numerous fields. For example, algorithms used for finding the shortest path, including Dijkstra's and Bellman-Ford algorithms, are deployed in GPS navigation systems. Graph algorithms are elementary for social network analysis, facilitating recommendation systems, fraud detection, and community detection among others. Sorting algorithms help in database management, which means ordering data in an efficient manner for quick retrieval. String matching algorithms such as KMP and Boyer-Moore are very important for text search engines, DNA sequence analysis, and plagiarism detection. Dynamic programming and memoization are applied in optimising resource allocation problems and in artificial intelligence for decision-making processes. Additional structures for building an efficient search engine, real-time analytics platform, and even a game engine involve trees and graphs. Once the algorithms and data structures are mastered, the performance optimisation and improvement of decision-making to solve real-world problems can be addressed in diverse fields such as e-commerce, healthcare, and transportation.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Course Project Introduction</h2>
+          
+            <p><strong>* Provide the Details of the problem space and how it was arrived at. Summary of findings from the white paper Reflection on city design and how business cases were identified </strong></p>
+            <p>The problem space was identified by analysing Mumbai’s subway system, focusing on overcrowding, inefficiency, and commuter challenges, especially during peak hours. Key issues include congestion at interchange stations like Dadar, long wait times, and the lack of efficient scheduling or alternative routes. The system’s capacity cannot meet the demands of the growing population, and commuters often resort to costlier and slower alternatives. Findings from the white paper emphasised the need for better scheduling, infrastructure upgrades, and the introduction of real-time tracking to improve operational efficiency. Business cases were identified in areas like increasing passenger capacity, reducing congestion, improving safety, and adopting electronic ticketing systems. These solutions aim to enhance the efficiency, scalability, and sustainability of the subway system, ensuring it can meet the needs of Mumbai’s expanding population.</p>
+
+            <p><strong>Problem definition and team details:</strong></p>
+            <p>The problem of subway system optimisation involves improving the efficiency, capacity, and scalability of urban train networks to accommodate growing commuter demand. It focuses on minimising congestion, reducing travel time, optimising scheduling, and ensuring the system’s sustainability and cost-effectiveness in big cities.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Si. No.</th>
+                        <th>Roll Number</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>102</td>
+                        <td>Mohammed Wasif Ali</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>105</td>
+                        <td>Yashas A Bhoomraddi</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>108</td>
+                        <td>Hemant Darur</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>155</td>
+                        <td>Farhan Sayed</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Business cases that each member is working on:</strong></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Function</th>
+                        <th>Business Case Study</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mohammed Wasif Ali</td>
+                        <td>Get the distance, get the time, safety management</td>
+                        <td>Security and safety of passengers, calculating the distance and time</td>
+                    </tr>
+                    <tr>
+                        <td>Yashas A Bhoomraddi</td>
+                        <td>Predictive maintenance, hygiene management</td>
+                        <td>Track and train upkeep, increase the number of passengers</td>
+                    </tr>
+                    <tr>
+                        <td>Hemant Darur</td>
+                        <td>Peak hour management, station management</td>
+                        <td>Improve train schedule efficiency, congestion at station</td>
+                    </tr>
+                    <tr>
+                        <td>Farhan Sayed</td>
+                        <td>Passenger ticketing and billing, get your booking info</td>
+                        <td>Electronic ticketing services, confirming the booking</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
