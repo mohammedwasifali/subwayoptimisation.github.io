@@ -113,7 +113,7 @@
         <tr><th>Course Code</th><td>24ECSP205</td></tr>
         <tr><th>Semester</th><td>III</td></tr>
         <tr><th>Division</th><td>A</td></tr>
-        <tr><th>Year</th><td>2023-24</td></tr>
+        <tr><th>Year</th><td>2024-2025</td></tr>
         <tr><th>Instructor</th><td>Mallikarjun Akki</td></tr>
     </table>
 
@@ -126,16 +126,71 @@
         <tr><td>4</td><td>155</td><td>Farhan Sayed</td></tr>
     </table>
 
+    <h4>1.3 Report owner</h4>
+    <table>
+        <tr><th>Roll number</th><th>Name</th></tr>
+        <tr><td>102</td><td>Mohammed wasif ali</td></tr>
+    </table>
+
     <h2 id="introduction">2. Introduction</h2>
-    <p>As urbanisation continues to surge...</p> <!-- Add the rest of your content -->
+    <p>As urbanisation continues to surge, the demand for efficient and sustainable public transportation systems becomes also grows in tandem. As cities expand, infrastructure often struggles to keep pace with the growing population, leading to traffic congestion, air pollution, and inefficient public transportation systems. These issues not only hinder economic growth but also reduce the quality of life for residents. Among these challenges, urban mobility remains a critical concern, as existing systems fail to cater to the increasing demands of daily commuters. This project focuses on designing a smart city with a special emphasis on innovative solutions for its subway systems and networks.  Reading the white paper has made it clear that there is an immediate need for solutions that would change the world for the better. One of the prominent problems people are facing today is the ease of travel.
+       Solving these urban challenges is essential to creating cities that are resilient and efficient. This project focuses on designing a smart city with advanced subway systems, using modern technologies to provide sustainable and effective transportation solutions. By reducing traffic congestion, cutting down carbon emissions, and improving access to public transport, the project aims to tackle the critical problems caused by urbanisation. It seeks to promote sustainable urban growth while addressing key societal issues such as mobility and accessibility disparities.</p> <!-- Add the rest of your content -->
 
     <h2 id="problem-statement">3. Problem Statement</h2>
     <h3>3.1 Domain</h3>
-    <p>Implementation of an efficient Subway System...</p> <!-- Add content -->
+    <p>Implementation of an efficient Subway System:
+Amongst the different modes of travel present today, railways and/or subway system is one of the cheapest and most frequently chosen mode of transport by the public. Today in India we face a myriad of problem in the railways system, be it overcrowding due to improper scheduling of trains or lack of facilities offered to the public waiting to board one. Efficient commute is the need of the hour and that provided us with the impetus to work on resolving this issue.
+</p> <!-- Add content -->
 
     <h3>3.2 Module Description</h3>
-    <p>I am working on...</p> <!-- Add content -->
+    <p>I am working on get the distance , get the time and safety management, get the distance function access the file that stores the graph of the whole subway system network , get the distance helps the user to get the shortest distance between the two stations using  Dijkstra’s Algorithm so that the user can know how much distance he should travel,  get the time is the function which helps the user to get to know for how much time the user
 
+needs to travel , by finding shortest distance between the stations by again using Dijkstra’s Algorithm and then calculating the time by taking 40 km/hr as average speed of the metro, safety management finds the shortest distance towards the exit in case of emergency, and even tells user which exit is nearest.</p> <!-- Add content -->
+
+    <h1>Functionality Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Sl. No.</th>
+                <th>Functionality Name</th>
+                <th>Known</th>
+                <th>Unknown</th>
+                <th>Principles Applicable</th>
+                <th>Algorithms</th>
+                <th>Data Structures</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Get the distance</td>
+                <td>I knew how many stations I had, calculated the distance between the stations, using that information I made a graph of the network of subway stations, the graph is used to process the shortest distance between the stations</td>
+                <td>How stations should be spread out for a city which has an area of around 1,500 km², and position the stations across the city area where there is need like the government offices area etc., the distance calculated between the stations for a scaled-down version of the city</td>
+                <td>The code uses Dijkstra’s algorithm, a greedy approach for finding the shortest path. It utilises a priority queue (min-heap) for efficient node selection and an adjacency list to represent the graph. Distances are updated, and the parent array helps trace the shortest path.</td>
+                <td>Dijkstra’s algorithm is used in this function to calculate the shortest distance between the two stations</td>
+                <td>Supporting data structures are graph, vector which is used to store data, and priority queue, also integers to represent the distance between the stations</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Get the time</td>
+                <td>How many stations I had, calculated the distance between the stations, using that I made a graph of the network of subway stations, the graph is used to process the shortest distance between the stations and then use an average speed of the subway as 40 km/hr and calculate the time to reach from one station to another</td>
+                <td>How stations should be placed in a city which has an area of around 1,500 km², and position the stations across the city area, the distance calculated between the stations for a scaled-down version of the city.</td>
+                <td>The code uses Dijkstra’s algorithm to compute the shortest path, even in graphs with negative weights. For time estimation, it incorporates a simple speed-distance-time calculation.</td>
+                <td>Dijkstra’s algorithm is used in this function to calculate the shortest distance between the two stations and then calculate the time taken to travel between the stations</td>
+                <td>Supporting data structures are graph, vector which is used to store data, and priority queue, also integers to represent the distance between the stations</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Safety management</td>
+                <td>I knew how the stations are built like tracks in the middle where the subway runs and on both sides there are platforms and there is an emergency exit door for emergency situations.</td>
+                <td>The exact build of the stations as they are underground and how the both sides of platforms are linked with each other, this makes us think about how much distance the connections between platforms should be made</td>
+                <td>The code uses the Bellman-Ford algorithm, a dynamic programming technique, to calculate the shortest path from the user’s current position to two exits. It identifies the nearest exit by comparing the computed distances and outputs the result.</td>
+                <td>The algorithms which are used in this are Bellman-Ford algorithm to get the shortest distance, and basic comparison to determine the nearest exit.</td>
+                <td>The supporting data structures for the function are graph, unordered map, and file handling.</td>
+            </tr>
+        </tbody>
+    </table>
+    
     <h2 id="functionality-analysis">4. Functionality Analysis</h2>
     <p>Workflow and Efficiency Analysis...</p> <!-- Add content -->
 
