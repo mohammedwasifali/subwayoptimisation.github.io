@@ -100,15 +100,24 @@
         transition: all 0.3s ease;
     }
 
-    footer a:hover {
-        color: #0056b3;
-        transform: translateX(5px);
+    /* Power mode effect */
+    @keyframes powerMode {
+        0% {
+            transform: scale(1);
+            box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
+        }
+        50% {
+            transform: scale(1.2);
+            box-shadow: 0 0 20px rgba(40, 167, 69, 1);
+        }
+        100% {
+            transform: scale(1);
+            box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
+        }
     }
 
-    /* Simple hover effect */
-    a:focus {
-        outline: none;
-        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
+    .link-list a:hover {
+        animation: powerMode 0.5s ease-out;
     }
 </style>
 </head>
