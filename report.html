@@ -206,18 +206,32 @@
             box-shadow: 0 0 10px rgba(143, 148, 251, 0.7);
         }
     }
-    .glowing-image {
-    width: 200px;
-    height: auto;
-    border: 4px solid transparent;
-    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
+      /* Glowing effect for images */
+    img {
+        border: 2px solid transparent;
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+        border-radius: 8px;
+        transition: box-shadow 0.4s ease-in-out, transform 0.4s ease-in-out;
+    }
 
-.glowing-image:hover {
-    border: 4px solid #00ff00; /* Green border on hover */
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.8); /* Green glow effect */
-}
+    img:hover {
+        box-shadow: 0 0 25px rgba(255, 215, 0, 0.7), 0 0 50px rgba(255, 215, 0, 0.4);
+        transform: scale(1.05);
+    }
 
+    /* Glowing effect for tables */
+    table {
+        border-collapse: collapse;
+        border: 2px solid transparent;
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: box-shadow 0.4s ease-in-out;
+    }
+
+    table:hover {
+        box-shadow: 0 0 25px rgba(255, 215, 0, 0.7), 0 0 50px rgba(255, 215, 0, 0.4);
+    }
 </style>
 
 
