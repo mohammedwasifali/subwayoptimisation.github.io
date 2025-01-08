@@ -5,126 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Learning Reflections</title>
 <style>
-    /* General body styling */
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        background-color: #f4f4f9;
+    /* General reset */
+    * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+        font-family: 'Helvetica Neue', sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
     }
 
     /* Container styling */
     .container {
-        max-width: 1200px;
-        margin: 20px auto;
-        padding: 30px;
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     }
 
-    /* Header and section styling */
+    /* Header styling */
     h1, h2 {
         text-align: center;
-        color: #2c3e50;
-        margin-bottom: 15px;
-    }
-
-    h3 {
-        color: #34495e;
-        margin-bottom: 10px;
-    }
-
-    .section {
+        color: #222;
+        font-weight: 600;
         margin-bottom: 20px;
+    }
+
+    /* Section styling */
+    .section {
+        margin-bottom: 30px;
         padding: 20px;
-        border-left: 5px solid #3498db;
-        background-color: #ecf8fe;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
+        background-color: #fff;
+        border-left: 4px solid #007bff;
+        border-radius: 4px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
     }
 
     .section:nth-child(even) {
-        background-color: #f9f9f9;
+        background-color: #f7f7f7;
     }
 
     /* Navigation styling */
     nav {
-        margin-top: 30px;
         text-align: center;
-        background-color: #3498db;
-        padding: 15px 0;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for nav */
+        margin-top: 30px;
     }
 
     nav ul {
         list-style: none;
+        display: inline-flex;
+        gap: 20px;
         padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    nav ul li {
-        display: inline;
     }
 
     nav ul li a {
         text-decoration: none;
         font-weight: 500;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-size: 1.1rem;
-        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        color: #007bff;
+        padding: 8px 15px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
     }
 
     nav ul li a:hover {
-        background-color: #2980b9; /* Slightly darker shade of blue */
+        background-color: #007bff;
         color: #fff;
-        transform: translateY(-3px); /* Subtle movement */
-    }
-
-    nav ul li a:focus {
-        outline: none;
-        box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.4);
+        transform: scale(1.05);
     }
 
     /* Footer styling */
     footer {
-        margin-top: 40px;
         text-align: center;
-        font-size: 16px;
-        color: #7f8c8d;
-        background-color: #ecf8fe;
-        padding: 15px 0;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+        margin-top: 40px;
+        color: #555;
+        font-size: 0.9rem;
     }
 
     footer p {
-        margin: 0;
-        font-size: 1rem;
+        margin: 10px 0;
     }
 
     footer a {
-        color: #3498db;
-        font-weight: bold;
+        color: #007bff;
         text-decoration: none;
-        transition: color 0.3s, transform 0.3s ease;
+        font-weight: bold;
+        transition: all 0.3s ease;
     }
 
     footer a:hover {
-        color: #2980b9; /* Darker shade on hover */
-        transform: translateX(5px); /* Subtle movement effect */
+        color: #0056b3;
+        transform: translateX(5px);
     }
 
-    footer a:focus {
+    /* Simple hover effect */
+    a:focus {
         outline: none;
-        box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.4);
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
     }
 </style>
 </head>
