@@ -5,174 +5,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Project – Subway System Optimization</title>
 <style>
-    /* General Styles */
-    body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        background-color: #f4f7fb; /* Soft background for better contrast */
-        color: #333;
-        margin: 0;
-        padding: 0;
-    }
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f7fb; /* Soft background for better contrast */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
-    /* Header Styles */
-    header {
-        background: linear-gradient(90deg, #4e54c8, #8f94fb);
-        color: #fff;
-        padding: 30px 0;
-        text-align: center;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        border-radius: 8px;
-    }
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
 
-    header h1 {
-        margin: 0;
-        font-size: 2.5rem;
-        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        color: #fff;
-        letter-spacing: 1px;
-    }
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    letter-spacing: 1px;
+}
 
-    /* Main Section */
-    main {
-        max-width: 1200px;
-        margin: 20px auto;
-        padding: 20px;
-        background: linear-gradient(145deg, #2e2e38, #3a3a48);
-        border-radius: 10px;
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    }
+/* Main Section */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(145deg, #2e2e38, #3a3a48);
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
 
-    h1, h2 {
-        text-align: center;
-        color: #007aff;
-        font-weight: 600;
-        opacity: 0; /* Initial state is invisible */
-        animation: fadeIn 2s ease-in-out forwards; /* Apply fadeIn animation */
-    }
+h1, h2 {
+    text-align: center;
+    color: #007aff;
+    font-weight: 600;
+    opacity: 0; /* Initial state is invisible */
+    animation: fadeIn 2s ease-in-out forwards; /* Apply fadeIn animation */
+}
 
-    p {
-        margin: 10px 0;
-    }
+p {
+    margin: 10px 0;
+    color: #fff; /* Updated text color to white */
+}
 
-    /* Table Styles */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        overflow: hidden;
-    }
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
 
-    table th, table td {
-        padding: 12px;
-        text-align: left;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-    }
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-    table th {
-        background: linear-gradient(90deg, #4e54c8, #8f94fb);
-        color: white;
-    }
+table th {
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    color: white;
+}
 
-    table tr:nth-child(even) {
-        background-color: #2e2e38;
-    }
+table tr:nth-child(even) {
+    background-color: #2e2e38;
+}
 
-    table tr:hover {
-        background-color: #3a3a48;
-    }
+table tr:hover {
+    background-color: #3a3a48;
+}
 
-    /* Navigation Styles */
-    nav {
-        margin: 40px 0;
-        text-align: center;
-    }
+/* Navigation Styles */
+nav {
+    margin: 40px 0;
+    text-align: center;
+}
 
-    nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        padding: 0;
-        margin: 0;
-    }
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
 
-    nav ul li a {
-        text-decoration: none;
-        color: #8f94fb;
-        font-weight: bold;
-        font-size: 1.1rem;
-        position: relative;
-        transition: color 0.3s ease, transform 0.3s ease;
-    }
+nav ul li a {
+    text-decoration: none;
+    color: #8f94fb;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
 
-    nav ul li a:hover {
-        color: #6c63ff;
-        transform: translateY(-3px);
-    }
+nav ul li a:hover {
+    color: #6c63ff;
+    transform: translateY(-3px);
+}
 
-    nav ul li a:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        width: 100%;
-        height: 3px;
-        background-color: #8f94fb;
-        transform: scaleX(0);
-        transform-origin: bottom right;
-        transition: transform 0.3s ease-out;
-    }
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: #8f94fb;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
 
-    nav ul li a:hover:after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
+nav ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 
-    /* Content Section */
-    .content-section p {
-        margin: 10px 0;
-    }
+/* Content Section */
+.content-section p {
+    margin: 10px 0;
+}
 
-    /* Power Mode Hover Effect */
-    @keyframes powerMode {
-        0% {
-            transform: scale(1);
-            box-shadow: 0 0 10px rgba(143, 148, 251, 0.7);
-        }
-        50% {
-            transform: scale(1.2);
-            box-shadow: 0 0 20px rgba(143, 148, 251, 1);
-        }
-        100% {
-            transform: scale(1);
-            box-shadow: 0 0 10px rgba(143, 148, 251, 0.7);
-        }
+/* Power Mode Hover Effect */
+@keyframes powerMode {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(143, 148, 251, 0.7);
     }
+    50% {
+        transform: scale(1.2);
+        box-shadow: 0 0 20px rgba(143, 148, 251, 1);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(143, 148, 251, 0.7);
+    }
+}
 
-    .link-list a:hover {
-        animation: powerMode 0.5s ease-out;
-    }
+.link-list a:hover {
+    animation: powerMode 0.5s ease-out;
+}
 
-    /* Hover effect for images (glowing border) */
-    img:hover {
-        border: 4px solid #8f94fb;
-        box-shadow: 0 0 15px #8f94fb;
-        transition: all 0.3s ease;
-    }
+/* Hover effect for images (glowing border) */
+img:hover {
+    border: 4px solid #8f94fb;
+    box-shadow: 0 0 15px #8f94fb;
+    transition: all 0.3s ease;
+}
 
-    /* General Heading Fade-In Animation */
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-            transform: translateY(-50px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
+/* General Heading Fade-In Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
     }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 </style>
 </head>
 <body>
