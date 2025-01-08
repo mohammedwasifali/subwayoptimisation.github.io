@@ -108,6 +108,7 @@
         font-size: 1.1rem;
     }
 
+    /* Updated hover effect for links with a line below */
     .toc ul li a {
         text-decoration: none;
         color: #007aff;
@@ -115,7 +116,9 @@
     }
 
     .toc ul li a:hover {
-        color: #0056b3; /* Darker shade of blue on hover */
+        color: #007aff;
+        text-shadow: none;
+        border-bottom: 3px solid #007aff;
         transform: translateX(5px); /* Slight movement effect */
     }
 
@@ -133,7 +136,8 @@
         text-decoration: none;
         font-weight: bold;
     }
-/* Power mode effect */
+
+    /* Power mode effect */
     @keyframes powerMode {
         0% {
             transform: scale(1);
@@ -151,6 +155,13 @@
 
     .link-list a:hover {
         animation: powerMode 0.5s ease-out;
+    }
+
+    /* Hover effect for images (glowing border) */
+    img:hover {
+        border: 4px solid #007aff;
+        box-shadow: 0 0 15px #007aff;
+        transition: all 0.3s ease;
     }
 </style>
 </head>
@@ -284,6 +295,8 @@ needs to travel , by finding shortest distance between the stations by again usi
         <li>Overall Efficiency: O((V + E) log V).</li>
     </ul>
 
+    <img src="subwaymap.jpeg" alt="Description of the image">
+
     <h2>2. Get the Time (Travel Time Calculation)</h2>
     <h3>Workflow:</h3>
     <ul>
@@ -321,6 +334,9 @@ needs to travel , by finding shortest distance between the stations by again usi
         <li>Comparison of Distances: O(1).</li>
         <li>Overall Efficiency: O(V × E).</li>
     </ul>
+    <img src="safetymap.JPEG" alt="Description of the image">
+
+    
     <h2 id="conclusion">5. Conclusion</h2>
     <p>Through this project, I gained valuable insights into city planning and software development. I learned how cities are designed with a focus on both functionality and sustainability. Concepts like zoning and block layouts, inspired by Chandigarh’s grid design, showed me how important it is to create efficient, livable spaces. I also realised the importance of green areas, such as parks and gardens, in improving air quality and providing recreational spaces, which are essential for a healthy urban environment.
 
