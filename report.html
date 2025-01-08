@@ -133,10 +133,24 @@
         text-decoration: none;
         font-weight: bold;
     }
+/* Power mode effect */
+    @keyframes powerMode {
+        0% {
+            transform: scale(1);
+            box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
+        }
+        50% {
+            transform: scale(1.2);
+            box-shadow: 0 0 20px rgba(40, 167, 69, 1);
+        }
+        100% {
+            transform: scale(1);
+            box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
+        }
+    }
 
-    footer a:hover {
-        color: #0056b3; /* Darker shade on hover */
-        text-decoration: underline;
+    .link-list a:hover {
+        animation: powerMode 0.5s ease-out;
     }
 </style>
 </head>
