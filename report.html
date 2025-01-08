@@ -3,151 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSA Project Report</title>
+    <title>Subway System Optimisation - Course Project Report</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            padding: 0;
-        }
-        h1, h2, h3 {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f9f9f9;
             color: #333;
-        }
-        ul {
-            list-style-type: none;
+            margin: 0;
             padding: 0;
         }
-        li {
-            margin-bottom: 10px;
+        header {
+            background-color: #007aff;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin: 5px 0 10px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007aff;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        p, li {
+            line-height: 1.6;
+            margin: 10px 0;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 20px;
+            margin: 20px 0;
         }
-        th, td {
+        table th, table td {
             border: 1px solid #ddd;
-            padding: 8px;
+            padding: 10px;
+            text-align: left;
         }
-        th {
-            background-color: #f2f2f2;
+        table th {
+            background-color: #f4f4f4;
+        }
+        .toc {
+            margin: 20px 0;
+            padding: 10px;
+            background: #f4f4f4;
+            border-left: 4px solid #007aff;
+        }
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+        .toc ul li {
+            margin: 5px 0;
+        }
+        .toc ul li a {
+            text-decoration: none;
+            color: #007aff;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            color: #888;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Data Structures and Algorithms</h1>
-        <h2>[Project Name]</h2>
-        <h3>School of Computer Science and Engineering</h3>
-        <p>2023-24</p>
-    </header>
 
-    <section>
+<header>
+    <h1>Data Structures and Algorithms</h1>
+    <h2>Subway System Optimisation</h2>
+</header>
+
+<div class="container">
+    <h2>Course Project Report</h2>
+    <p><strong>School of Computer Science and Engineering</strong></p>
+    <p>2023-24</p>
+
+    <div class="toc">
         <h2>Contents</h2>
-        <ol>
-            <li>Course and Team Details</li>
-            <li>Introduction</li>
-            <li>Problem Definition</li>
-            <li>Functionality Selection</li>
-            <li>Functionality Analysis</li>
-            <li>Conclusion</li>
-            <li>References</li>
-        </ol>
-    </section>
+        <ul>
+            <li><a href="#course-details">1. Course and Team Details</a></li>
+            <li><a href="#introduction">2. Introduction</a></li>
+            <li><a href="#problem-statement">3. Problem Statement</a></li>
+            <li><a href="#functionality-analysis">4. Functionality Analysis</a></li>
+            <li><a href="#conclusion">5. Conclusion</a></li>
+            <li><a href="#references">6. References</a></li>
+        </ul>
+    </div>
 
-    <section>
-        <h2>1. Course and Team Details</h2>
-        <h3>1.1 Course Details</h3>
-        <p><strong>Course Name:</strong> Data Structures and Algorithms</p>
-        <p><strong>Course Code:</strong></p>
-        <p><strong>Semester:</strong> III</p>
-        <p><strong>Year:</strong> 2023-24</p>
-        <p><strong>Instructor:</strong></p>
+    <h2 id="course-details">1. Course and Team Details</h2>
+    <h3>1.1 Course Details</h3>
+    <table>
+        <tr><th>Course Name</th><td>Data Structures and Algorithms</td></tr>
+        <tr><th>Course Code</th><td>24ECSP205</td></tr>
+        <tr><th>Semester</th><td>III</td></tr>
+        <tr><th>Division</th><td>A</td></tr>
+        <tr><th>Year</th><td>2023-24</td></tr>
+        <tr><th>Instructor</th><td>Mallikarjun Akki</td></tr>
+    </table>
 
-        <h3>1.2 Team Details</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Si. No.</th>
-                    <th>Roll No.</th>
-                    <th>Name</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>1</td><td></td><td></td></tr>
-                <tr><td>2</td><td></td><td></td></tr>
-                <tr><td>3</td><td></td><td></td></tr>
-                <tr><td>4</td><td></td><td></td></tr>
-            </tbody>
-        </table>
+    <h3>1.2 Team Details</h3>
+    <table>
+        <tr><th>Si. No.</th><th>Roll No.</th><th>Name</th></tr>
+        <tr><td>1</td><td>102</td><td>Mohammed Wasif Ali</td></tr>
+        <tr><td>2</td><td>105</td><td>Yashas A Bhoomraddi</td></tr>
+        <tr><td>3</td><td>108</td><td>Hemant Darur</td></tr>
+        <tr><td>4</td><td>155</td><td>Farhan Sayed</td></tr>
+    </table>
 
-        <h3>1.3 Report Owner</h3>
-        <p><strong>Roll No.:</strong></p>
-        <p><strong>Name:</strong></p>
-    </section>
+    <h2 id="introduction">2. Introduction</h2>
+    <p>As urbanisation continues to surge...</p> <!-- Add the rest of your content -->
 
-    <section>
-        <h2>2. Introduction</h2>
-        <p>Provide an introduction to the project selected in around 200 words. Relate it to the white paper and how the domain was selected. All references must be cited using numbering (e.g., [1]).</p>
-    </section>
+    <h2 id="problem-statement">3. Problem Statement</h2>
+    <h3>3.1 Domain</h3>
+    <p>Implementation of an efficient Subway System...</p> <!-- Add content -->
 
-    <section>
-        <h2>3. Problem Statement</h2>
-        <h3>3.1 Domain</h3>
-        <p>Introduce the problem statement. Explain the problem being automated and its importance. Relate it to the white paper.</p>
+    <h3>3.2 Module Description</h3>
+    <p>I am working on...</p> <!-- Add content -->
 
-        <h3>3.2 Module Description</h3>
-        <p>Describe the module worked on individually. Provide details about your specific contribution.</p>
-    </section>
+    <h2 id="functionality-analysis">4. Functionality Analysis</h2>
+    <p>Workflow and Efficiency Analysis...</p> <!-- Add content -->
 
-    <section>
-        <h2>4. Functionality Selection</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Si. No.</th>
-                    <th>Functionality Name</th>
-                    <th>Known</th>
-                    <th>Unknown</th>
-                    <th>Principles Applicable</th>
-                    <th>Algorithms</th>
-                    <th>Data Structures</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>2</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-            </tbody>
-        </table>
-    </section>
+    <h2 id="conclusion">5. Conclusion</h2>
+    <p>Through this project...</p> <!-- Add content -->
 
-    <section>
-        <h2>5. Functionality Analysis</h2>
-        <p>For each module implemented, describe the workflow and provide efficiency analysis. Add subheadings as necessary.</p>
-    </section>
+    <h2 id="references">6. References</h2>
+    <ol>
+        <li>Thomas H. Cormen...</li>
+        <li>Dijkstra, E. W. (1959)...</li>
+        <!-- Add all references -->
+    </ol>
+</div>
 
-    <section>
-        <h2>6. Conclusion</h2>
-        <p>Summarize your learning and project takeaways.</p>
-    </section>
+<footer>
+    &copy; 2023-24 School of Computer Science and Engineering
+</footer>
 
-    <section>
-        <h2>7. References</h2>
-        <p>[1] Thomas H. Cormen, Clifford Stein, Ronald L. Rivest, and Charles E. Leiserson. 2001. Introduction to Algorithms (2nd ed.). McGraw-Hill Higher Education.</p>
-        <p>[2] lbackstrom. The Importance of Algorithms. Link: <a href="https://www.topcoder.com/community/data-science/data-science-tutorials/the-importance-of-algorithms/" target="_blank">https://www.topcoder.com</a>. Last accessed on: 23 October 2017.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Data Structures and Algorithms</p>
-    </footer>
-     <nav>
-            <ul>
-                <li><a href="index.html">Home Page</a></li>
-                 <li><a href="introduction.html">Introduction</li>
-                <li><a href="reflections.html">Reflections</a></li>
-                <li><a href="report.html">Report</a></li>
-            </ul>
-     </nav>
 </body>
 </html>
