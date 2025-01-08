@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Mohammed Wasif Ali</title>
 <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        background-color: #f4f7fb; /* Soft background for better contrast */
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* General Heading Styling */
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+        color: #007aff;
+        font-weight: 600;
+        opacity: 0; /* Initial state is invisible */
+        animation: fadeIn 2s ease-in-out forwards; /* Apply fadeIn animation */
+    }
+
+    /* Animation for fading in */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0; /* Start with opacity 0 */
+            transform: translateY(-50px); /* Start offscreen */
+        }
+        100% {
+            opacity: 1; /* End with full opacity */
+            transform: translateY(0); /* End at normal position */
+        }
+    }
     /* General Reset */
     * {
         margin: 0;
