@@ -28,6 +28,25 @@ header {
     margin-bottom: 20px;
 }
 
+/* Improved heading visibility with text shadow */
+header h1, header h2 {
+    color: #4e4ebd; /* Darker purple */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px; /* Space between letters for visibility */
+}
+
+header h1 {
+    font-size: 2.8rem; /* Larger font size for better visibility */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for better legibility */
+}
+
+header h2 {
+    font-size: 1.8rem; /* Larger subheading font */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
 /* Section styling */
 .section {
     background: linear-gradient(145deg, #d8d5ff, #c2bef4);
@@ -97,9 +116,26 @@ nav ul li a {
     transition: all 0.3s ease;
 }
 
+/* Hover effect for links */
 nav ul li a:hover {
     color: #6c63ff;
     border-bottom: 3px solid #6c63ff;
+    text-decoration: underline;
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(111, 126, 219, 0.7), 0 0 20px rgba(111, 126, 219, 0.6);
+    animation: powerMode 0.5s ease-out;
+}
+
+/* Glow effect for images */
+img {
+    transition: all 0.3s ease;
+    border: 4px solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+img:hover {
+    border: 4px solid #8f94fb;
+    box-shadow: 0 0 15px #8f94fb, 0 0 25px rgba(143, 148, 251, 0.7);
 }
 
 /* Footer styling */
@@ -120,69 +156,17 @@ footer a {
 footer a:hover {
     color: #6c63ff;
 }
-/* Header styling */
-header h1, header h2 {
-    color: #4e4ebd; /* Darker purple */
+
+/* Bold text strip effect */
+strong {
+    background: linear-gradient(145deg, #6c63ff, #8f94fb);
+    color: transparent;
     font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    letter-spacing: 1px; /* Space between letters for visibility */
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
-
-/* Improved heading visibility with text shadow */
-header h1 {
-    font-size: 2.8rem; /* Larger font size for better visibility */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for better legibility */
-}
-
-header h2 {
-    font-size: 1.8rem; /* Larger subheading font */
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-}
-
-/* Link styling */
-.link-list a:hover {
-    text-decoration: underline;
-    color: #6c63ff;
-    transform: scale(1.1);
-    text-shadow: 0 0 10px rgba(111, 126, 219, 0.7), 0 0 20px rgba(111, 126, 219, 0.6);
-    animation: powerMode 0.5s ease-out;
-}
-
-/* Navigation bar styling */
-nav ul li a {
-    position: relative;
-    padding: 8px 15px;
-    color: #8f94fb;
-    font-weight: 500;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #6c63ff;
-    transform: translateY(-3px);
-}
-
-nav ul li a:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 3px;
-    background-color: #8f94fb;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-out;
-}
-
-nav ul li a:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
 </style>
 
 </head>
