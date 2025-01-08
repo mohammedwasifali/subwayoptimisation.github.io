@@ -17,44 +17,49 @@
         font-family: 'Arial', sans-serif;
         line-height: 1.6;
         margin: 0;
-        background: #f4f4f9;
+        background: linear-gradient(120deg, #ff7eb3, #ff758c, #ff7eb3);
         color: #333;
     }
 
     /* Main container */
     .container {
         max-width: 1200px;
-        margin: 0 auto;
+        margin: 20px auto;
         padding: 20px;
-        background: #fff;
+        background: linear-gradient(145deg, #ffffff, #f0f0f0);
         border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     }
 
     /* Header styling */
     .header {
-        background-color: #28a745;
+        background: linear-gradient(90deg, #4facfe, #00f2fe);
         color: #fff;
         text-align: center;
         padding: 30px 0;
         border-radius: 8px;
         margin-bottom: 40px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
 
     .header h1 {
         font-size: 2.5rem;
         margin-bottom: 10px;
         letter-spacing: 1px;
+        color: #fff;
+        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
     .header p {
         font-size: 1.4rem;
         font-weight: 300;
+        color: #e0f7fa;
     }
 
     /* Section styling */
     .section {
-        background: #fff;
+        background: linear-gradient(135deg, #8e44ad, #3498db);
+        color: #fff;
         border-radius: 12px;
         padding: 30px;
         margin-bottom: 30px;
@@ -63,13 +68,13 @@
 
     .section h2 {
         font-size: 1.7rem;
-        color: #28a745;
+        color: #fff;
         margin-bottom: 20px;
         text-align: center;
         letter-spacing: 0.5px;
         text-transform: uppercase;
         font-weight: 500;
-        border-bottom: 2px solid #28a745;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
         padding-bottom: 10px;
     }
 
@@ -82,8 +87,9 @@
 
     ul li {
         padding: 15px;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         font-size: 1rem;
+        color: #f0f0f0;
     }
 
     ul li:last-child {
@@ -92,13 +98,13 @@
 
     /* Strong text within list items */
     ul li strong {
-        color: #333;
+        color: #e0e0e0;
         font-weight: 600;
     }
 
     /* Link styling */
     .link-list a {
-        color: #28a745;
+        color: #ff758c;
         text-decoration: none;
         font-weight: bold;
         transition: color 0.3s ease, transform 0.3s ease;
@@ -106,9 +112,9 @@
 
     .link-list a:hover {
         text-decoration: underline;
-        color: #005b30;
+        color: #ff4b66;
         transform: scale(1.1);
-        text-shadow: 0 0 10px rgba(40, 167, 69, 0.7), 0 0 20px rgba(40, 167, 69, 0.6);
+        text-shadow: 0 0 10px rgba(255, 117, 140, 0.7), 0 0 20px rgba(255, 117, 140, 0.6);
     }
 
     /* Navigation bar styling */
@@ -125,7 +131,7 @@
 
     nav ul li a {
         text-decoration: none;
-        color: #007bff;
+        color: #4facfe;
         font-weight: bold;
         font-size: 1.1rem;
         position: relative;
@@ -133,7 +139,7 @@
     }
 
     nav ul li a:hover {
-        color: #0056b3;
+        color: #00f2fe;
         transform: translateY(-3px);
     }
 
@@ -144,7 +150,7 @@
         bottom: -5px;
         width: 100%;
         height: 3px;
-        background-color: #007bff;
+        background-color: #4facfe;
         transform: scaleX(0);
         transform-origin: bottom right;
         transition: transform 0.3s ease-out;
@@ -162,29 +168,31 @@
         font-size: 1rem;
         color: #555;
         padding: 20px 0;
-        background-color: #f1f1f1;
+        background: linear-gradient(120deg, #4facfe, #00f2fe);
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        color: #fff;
     }
 
     footer p {
         margin: 0;
         font-weight: 300;
+        color: #f0f8ff;
     }
 
     /* Power mode effect */
     @keyframes powerMode {
         0% {
             transform: scale(1);
-            box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
+            box-shadow: 0 0 10px rgba(255, 117, 140, 0.7);
         }
         50% {
             transform: scale(1.2);
-            box-shadow: 0 0 20px rgba(40, 167, 69, 1);
+            box-shadow: 0 0 20px rgba(255, 117, 140, 1);
         }
         100% {
             transform: scale(1);
-            box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
+            box-shadow: 0 0 10px rgba(255, 117, 140, 0.7);
         }
     }
 
@@ -201,7 +209,7 @@
         </header>
 
         <section class="section">
-            <h2>⚙️ Projects</h2>
+            <h2>🛠️ Projects🔮</h2>
             <ul>
                 <li><strong>Project :</strong><strong>Subway system optemisation</strong>.</li>
                 <li>The problem involves optimizing a subway system to enhance its efficiency, safety, and overall passenger experience. The focus is on several key functions, including route optimization to determine the most efficient paths, peak hour management to address overcrowding, and real-time updates to provide passengers with accurate information. Additionally, predictive maintenance is essential to prevent breakdowns, while hygiene and safety management ensure the cleanliness and security of the system. Passenger ticketing and billing are streamlined to improve user convenience, and station management ensures smooth operations across different locations. Finally, a safety management feature focuses on identifying the nearest exit in case of emergencies. Each of these functions works together to create a more reliable, user-friendly subway system.</li>
