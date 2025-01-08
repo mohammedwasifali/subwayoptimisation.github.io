@@ -191,8 +191,84 @@ needs to travel , by finding shortest distance between the stations by again usi
         </tbody>
     </table>
     
-    <h2 id="functionality-analysis">4. Functionality Analysis</h2>
-    <p>Workflow and Efficiency Analysis...</p> <!-- Add content -->
+    <h2 id="5 functionality-analysis">4. Functionality Analysis</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Functionality</th>
+                <th>Workflow</th>
+                <th>Efficiency Analysis</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Get the Distance (Dijkstra's Algorithm)</td>
+                <td>
+                    <ol>
+                        <li>Check if the graph is loaded; if not, load it from a CSV file or allow the user to input data manually.</li>
+                        <li>Use Dijkstra’s algorithm to compute the shortest path:
+                            <ul>
+                                <li>Initialize distances to infinity, except for the starting node.</li>
+                                <li>Use a priority queue to pick the node with the smallest tentative distance.</li>
+                                <li>Relax edges and update distances as needed.</li>
+                                <li>Repeat until the shortest path to the destination is found.</li>
+                            </ul>
+                        </li>
+                        <li>Trace back the path using a parent array to output the shortest route and distance.</li>
+                    </ol>
+                </td>
+                <td>
+                    <ul>
+                        <li>Graph Loading: O(E)</li>
+                        <li>Dijkstra’s Algorithm: O((V + E) log V)</li>
+                        <li>Overall Efficiency: O((V + E) log V)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Get the Time (Travel Time Calculation)</td>
+                <td>
+                    <ol>
+                        <li>Use the distance obtained from Dijkstra's algorithm.</li>
+                        <li>Calculate time using the formula: Time (minutes) = (Distance (km) / Speed (km/h)) * 60</li>
+                        <li>Assume a constant average speed (e.g., 40 km/h).</li>
+                        <li>Output the estimated travel time.</li>
+                    </ol>
+                </td>
+                <td>
+                    <ul>
+                        <li>Time Calculation: O(1)</li>
+                        <li>Overall Efficiency: Dominated by the shortest distance calculation, O((V + E) log V)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Safety Management (Bellman-Ford Algorithm)</td>
+                <td>
+                    <ol>
+                        <li>Read the graph data from a file (source, destination, and edge weights).</li>
+                        <li>Construct the graph using an adjacency list.</li>
+                        <li>Run the Bellman-Ford algorithm from the user’s current position:
+                            <ul>
+                                <li>Initialize distances to infinity except for the starting node.</li>
+                                <li>Relax all edges V-1 times to update distances and parents.</li>
+                            </ul>
+                        </li>
+                        <li>Retrieve distances to exits (exit1 and exit2) and determine the nearest exit.</li>
+                        <li>Output the nearest exit and its distance.</li>
+                    </ol>
+                </td>
+                <td>
+                    <ul>
+                        <li>Graph Loading: O(E)</li>
+                        <li>Bellman-Ford Algorithm: O(V × E)</li>
+                        <li>Comparison of Distances: O(1)</li>
+                        <li>Overall Efficiency: O(V × E)</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
     <h2 id="conclusion">5. Conclusion</h2>
     <p>Through this project...</p> <!-- Add content -->
