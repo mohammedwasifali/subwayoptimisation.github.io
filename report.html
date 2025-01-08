@@ -5,83 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subway System Optimisation - Course Project Report</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #007aff;
-            color: white;
-            text-align: center;
-            padding: 20px 10px;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
-        header h2 {
-            font-size: 1.5rem;
-            font-weight: 300;
-            margin: 5px 0 10px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #007aff;
-            font-size: 1.8rem;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 5px;
-        }
-        p, li {
-            line-height: 1.6;
-            margin: 10px 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        table th, table td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-        }
-        table th {
-            background-color: #f4f4f4;
-        }
-        .toc {
-            margin: 20px 0;
-            padding: 10px;
-            background: #f4f4f4;
-            border-left: 4px solid #007aff;
-        }
-        .toc ul {
-            list-style: none;
-            padding: 0;
-        }
-        .toc ul li {
-            margin: 5px 0;
-        }
-        .toc ul li a {
-            text-decoration: none;
-            color: #007aff;
-        }
-        footer {
-            text-align: center;
-            margin: 20px 0;
-            color: #888;
-            font-size: 0.9rem;
-        }
-    </style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        background-color: #f4f7fb; /* Soft background for better contrast */
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #007aff; /* Metro blue */
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        margin: 0;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin: 5px 0 20px;
+        text-transform: capitalize;
+    }
+
+    .container {
+        max-width: 1000px; /* Increased width for better readability */
+        margin: 20px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slightly more prominent shadow */
+    }
+
+    h2 {
+        color: #007aff;
+        font-size: 1.8rem;
+        font-weight: 600;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 8px;
+        margin-bottom: 20px;
+    }
+
+    p, li {
+        line-height: 1.7;
+        margin: 15px 0;
+        font-size: 1.1rem; /* Slightly larger font for better readability */
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 15px;
+        text-align: left;
+        font-size: 1.1rem;
+    }
+
+    table th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td {
+        background-color: #fafafa; /* Slight background color for table rows */
+    }
+
+    table tr:nth-child(even) td {
+        background-color: #f9f9f9; /* Zebra striping for readability */
+    }
+
+    table tr:hover {
+        background-color: #e7f3ff; /* Highlight row on hover */
+    }
+
+    .toc {
+        margin: 20px 0;
+        padding: 15px;
+        background: #f7f7f7;
+        border-left: 4px solid #007aff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    }
+
+    .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .toc ul li {
+        margin: 10px 0;
+        font-size: 1.1rem;
+    }
+
+    .toc ul li a {
+        text-decoration: none;
+        color: #007aff;
+        transition: color 0.3s, transform 0.3s ease;
+    }
+
+    .toc ul li a:hover {
+        color: #0056b3; /* Darker shade of blue on hover */
+        transform: translateX(5px); /* Slight movement effect */
+    }
+
+    footer {
+        text-align: center;
+        margin: 30px 0 20px;
+        color: #888;
+        font-size: 1rem;
+        padding-top: 10px;
+        border-top: 2px solid #f0f0f0;
+    }
+
+    footer a {
+        color: #007aff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    footer a:hover {
+        color: #0056b3; /* Darker shade on hover */
+        text-decoration: underline;
+    }
+</style>
 </head>
 <body>
 
