@@ -5,106 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Learning Reflections</title>
 <style>
-        /* General body styling */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-        }
+    /* General body styling */
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+    }
 
-        /* Container styling */
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+    /* Container styling */
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 30px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
 
-        /* Header and section styling */
-        h1, h2 {
-            text-align: center;
-            color: #2c3e50;
-        }
+    /* Header and section styling */
+    h1, h2 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 15px;
+    }
 
-        h3 {
-            color: #34495e;
-            margin-bottom: 10px;
-        }
+    h3 {
+        color: #34495e;
+        margin-bottom: 10px;
+    }
 
-        .section {
-            margin-bottom: 20px;
-            padding: 15px;
-            border-left: 5px solid #3498db;
-            background-color: #ecf8fe;
-            border-radius: 5px;
-        }
+    .section {
+        margin-bottom: 20px;
+        padding: 20px;
+        border-left: 5px solid #3498db;
+        background-color: #ecf8fe;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
+    }
 
-        .section:nth-child(even) {
-            background-color: #f9f9f9;
-        }
+    .section:nth-child(even) {
+        background-color: #f9f9f9;
+    }
 
-        /* Navigation styling */
-        nav {
-            margin-top: 20px;
-            text-align: center;
-            background-color: #3498db;
-            padding: 10px 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        }
+    /* Navigation styling */
+    nav {
+        margin-top: 30px;
+        text-align: center;
+        background-color: #3498db;
+        padding: 15px 0;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for nav */
+    }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
 
-        nav ul li {
-            display: inline;
-        }
+    nav ul li {
+        display: inline;
+    }
 
-        nav ul li a {
-            text-decoration: none;
-            font-weight: normal;
-            color: #3498db;
-            padding: 8px 18px;
-            border-radius: 4px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            font-size: 1rem;
-        }
+    nav ul li a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
 
-        nav ul li a:hover {
-            background-color: #3498db;
-            color: #fff;
-        }
+    nav ul li a:hover {
+        background-color: #2980b9; /* Slightly darker shade of blue */
+        color: #fff;
+        transform: translateY(-3px); /* Subtle movement */
+    }
 
-        nav ul li a:focus {
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.4);
-        }
+    nav ul li a:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.4);
+    }
 
-        /* Footer styling */
-        footer {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 14px;
-            color: #7f8c8d;
-            background-color: #ecf8fe;
-            padding: 10px 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        }
+    /* Footer styling */
+    footer {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 16px;
+        color: #7f8c8d;
+        background-color: #ecf8fe;
+        padding: 15px 0;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    }
 
-        footer p {
-            margin: 0;
-        }
+    footer p {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    footer a {
+        color: #3498db;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s, transform 0.3s ease;
+    }
+
+    footer a:hover {
+        color: #2980b9; /* Darker shade on hover */
+        transform: translateX(5px); /* Subtle movement effect */
+    }
+
+    footer a:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.4);
+    }
 </style>
 </head>
 <body>
