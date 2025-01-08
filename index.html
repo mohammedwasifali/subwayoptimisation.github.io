@@ -4,114 +4,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Mohammed Wasif Ali</title>
-    <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
+    /* General Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            background: #f4f4f9;
-            color: #333;
-        }
+    /* Global styling */
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        background: #f4f4f9;
+        color: #333;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+    /* Main container */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-        .header {
-            background-color: #28a745;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
+    /* Header styling */
+    .header {
+        background-color: #28a745;
+        color: #fff;
+        text-align: center;
+        padding: 30px 0;
+        border-radius: 8px;
+        margin-bottom: 40px;
+    }
 
-        .header h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
+    .header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
 
-        .header p {
-            font-size: 1.2rem;
-        }
+    .header p {
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
 
-        .section {
-            background: #fff;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+    /* Section styling */
+    .section {
+        background: #fff;
+        border-radius: 12px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
 
-        .section h2 {
-            font-size: 1.5rem;
-            color: #28a745;
-            margin-bottom: 10px;
-            text-align: center;
-        }
+    .section h2 {
+        font-size: 1.7rem;
+        color: #28a745;
+        margin-bottom: 20px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        font-weight: 500;
+        border-bottom: 2px solid #28a745;
+        padding-bottom: 10px;
+    }
 
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+    /* Unordered list styling */
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-        ul li {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
+    ul li {
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+        font-size: 1rem;
+    }
 
-        ul li:last-child {
-            border: none;
-        }
+    ul li:last-child {
+        border: none;
+    }
 
-        ul li strong {
-            color: #333;
-        }
+    /* Strong text within list items */
+    ul li strong {
+        color: #333;
+        font-weight: 600;
+    }
 
-        .link-list a {
-            color: #28a745;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    /* Link styling */
+    .link-list a {
+        color: #28a745;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
 
-        .link-list a:hover {
-            text-decoration: underline;
-        }
+    .link-list a:hover {
+        text-decoration: underline;
+        color: #005b30;
+        transform: scale(1.1);
+        text-shadow: 0 0 10px rgba(40, 167, 69, 0.7), 0 0 20px rgba(40, 167, 69, 0.6);
+    }
 
-        nav ul {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
+    /* Navigation bar styling */
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 40px;
+    }
 
-        nav ul li a {
-            text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
-        }
+    nav ul li {
+        list-style: none;
+    }
 
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
+    nav ul li a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+        font-size: 1.1rem;
+        position: relative;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
 
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9rem;
-            color: #555;
+    nav ul li a:hover {
+        color: #0056b3;
+        transform: translateY(-3px);
+    }
+
+    nav ul li a:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 3px;
+        background-color: #007bff;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease-out;
+    }
+
+    nav ul li a:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    /* Footer styling */
+    footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 1rem;
+        color: #555;
+        padding: 20px 0;
+        background-color: #f1f1f1;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer p {
+        margin: 0;
+        font-weight: 300;
+    }
+
+    /* Power mode effect */
+    @keyframes powerMode {
+        0% {
+            transform: scale(1);
+            box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
         }
-    </style>
+        50% {
+            transform: scale(1.2);
+            box-shadow: 0 0 20px rgba(40, 167, 69, 1);
+        }
+        100% {
+            transform: scale(1);
+            box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
+        }
+    }
+
+    .link-list a:hover {
+        animation: powerMode 0.5s ease-out;
+    }
+</style>
 </head>
 <body>
     <div class="container">
@@ -124,6 +204,7 @@
             <h2>⚙️ Projects</h2>
             <ul>
                 <li><strong>Project :</strong><strong>Subway system optemisation</strong>.</li>
+                <li>The problem involves optimizing a subway system to enhance its efficiency, safety, and overall passenger experience. The focus is on several key functions, including route optimization to determine the most efficient paths, peak hour management to address overcrowding, and real-time updates to provide passengers with accurate information. Additionally, predictive maintenance is essential to prevent breakdowns, while hygiene and safety management ensure the cleanliness and security of the system. Passenger ticketing and billing are streamlined to improve user convenience, and station management ensures smooth operations across different locations. Finally, a safety management feature focuses on identifying the nearest exit in case of emergencies. Each of these functions works together to create a more reliable, user-friendly subway system.</li>
             </ul>
         </section>
 
@@ -132,7 +213,7 @@
             <ul>
                 <li>C , C++, Python, HTML</li>
                 <li>Data Structures and Algorithms</li>
-                <li>Web Development (React.js, Node.js)</li>
+                <li>Web Development</li>
             </ul>
         </section>
 
